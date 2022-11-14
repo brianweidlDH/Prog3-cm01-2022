@@ -12,7 +12,6 @@ const Stack = createNativeStackNavigator();
 import Login from '../screens/Login';
 import Register from '../screens/Register';
 import Menu from './Menu';
-import Comments from '../screens/Comments';
 
 class MainNavigation extends Component {
 	constructor(props) {

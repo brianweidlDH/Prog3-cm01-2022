@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { auth } from '../firebase/config';
 
 class Login extends Component {
 	constructor(props) {
@@ -14,7 +15,7 @@ class Login extends Component {
 		auth
 			.signInWithEmailAndPassword(email, pass)
 			.then((res) => {
-				this.props.navigation.navigate('HomeMenu');
+				this.props.navigation.navigate('Menu');
 			})
 			.catch((error) => console.log(error));
 	}
